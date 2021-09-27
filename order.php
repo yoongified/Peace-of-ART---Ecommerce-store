@@ -28,6 +28,7 @@
 					<li><a href="profile-details.php">Profile Details</a></li>
           			<li><a href="wishlist.php">Wishlist</a></li>
 					<li><a class="active" href="order.php">Orders</a></li>
+					<li><a href="reviews.php">Reviews</a></li>	
 	
 				</ul>
 

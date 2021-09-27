@@ -18,6 +18,7 @@ $discount=$coupondetails['coupon_discount'];
 						<li><a href="home.php">Home</a></li>
 						<li><a href="order.php">Orders</a></li>
 						<li class="active">Order Details</li>
+						<li><a href="reviews.php">Reviews</a></li>	
 					</ol>
 				</div>
 			</div>

@@ -43,52 +43,53 @@ wishlist.product_id=product.product_id and wishlist.customer_id='$uid'");
 				<ul class="list-inline dashboard-menu text-center">
 					<li><a href="profile-details.php">Profile Details</a></li>
           			<li><a class="active" href="wishlist.php">Wishlist</a></li>
-					<li><a class href="order.php">Orders</a></li>		
+					<li><a class href="order.php">Orders</a></li>
+					<li><a href="reviews.php">Reviews</a></li>		
 				</ul>
 
 				<div class="dashboard-wrapper user-dashboard">
 					<div class="table-responsive">
 						<table class="table">
 							<thead>
-                <tr>
-                  <th class=""></th>
-                  <th class="">Item Name</th>
-                  <th class="">Item Price</th>
-                  <th class="">Actions</th>
-                </tr>
-							</thead>
-							<tbody>
-                <?php 
-                  while($row=mysqli_fetch_assoc($res)){
-                ?>
-                <tr class="">
-                  <td class=""><img width="80" src="<?php echo PRODUCT_IMAGE_SITE_PATH.$row['img1']?>" alt="" /></td>
-                  <td class="">
-                    <div class="product-info">
-					<a href="product.php?id=<?php echo $row['product_id']?>"><?php echo $row['pname']?></a>
-                    </div>
-                  </td>
-                  <td class="">₹<?php echo $row['price']?><br>
-                  <strike>₹<?php echo $row['mrp']?></strike>
-                  </td>
+								<tr>
+								<th class=""></th>
+								<th class="">Item Name</th>
+								<th class="">Item Price</th>
+								<th class="">Actions</th>
+								</tr>
+											</thead>
+											<tbody>
+								<?php 
+								while($row=mysqli_fetch_assoc($res)){
+								?>
+								<tr class="">
+								<td class=""><img width="80" src="<?php echo PRODUCT_IMAGE_SITE_PATH.$row['img1']?>" alt="" /></td>
+								<td class="">
+									<div class="product-info">
+									<a href="product.php?id=<?php echo $row['product_id']?>"><?php echo $row['pname']?></a>
+									</div>
+								</td>
+								<td class="">₹<?php echo $row['price']?><br>
+								<strike>₹<?php echo $row['mrp']?></strike>
+								</td>
 
-                  <td class="">
-                    <a class="product-remove" href="wishlist.php?wishlist_id=<?php echo $row['id']?>" ><i class="fas fa-trash"></i></a>
-                  </td>
-                </tr>
-                <?php } ?>
-              </tbody>
+								<td class="">
+									<a class="product-remove" href="wishlist.php?wishlist_id=<?php echo $row['id']?>" ><i class="fas fa-trash"></i></a>
+								</td>
+								</tr>
+								<?php } ?>
+							</tbody>
 						</table>  
 					</div> 
 				</div>
 			</div>
 		</div>
     <a href="home.php" class="btn btn-main pull-left">Continue Shopping</a>
-    <a href="checkout.php" class="btn btn-main pull-right">Checkout</a>
+
 	</div>
 </section>
 
-
+<br>
 
 
 

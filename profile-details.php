@@ -31,7 +31,7 @@ if(!isset($_SESSION['USER_LOGIN'])){
           <li><a class="active" href="profile-details.php">Profile Details</a></li>
           <li><a href="wishlist.php">Wishlist</a></li>
           <li><a href="order.php">Orders</a></li>
-
+          <li><a href="reviews.php">Reviews</a></li>	
           
         </ul>
       <!--START PROFILE-->
@@ -95,7 +95,7 @@ if(!isset($_SESSION['USER_LOGIN'])){
     </div>
   </div>
 </section>
-
+<br>
 <script>
 
 function update_profile(){
