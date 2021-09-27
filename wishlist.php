@@ -27,7 +27,7 @@ wishlist.product_id=product.product_id and wishlist.customer_id='$uid'");
 					<h1 class="page-name">MY ACCOUNT</h1>
 					<ol class="breadcrumb">
 						<li><a href="home.php">Home</a></li>
-						<li class="active">Wishlist</li>
+						<li class="active">aaaa</li>
 					</ol>
 				</div>
 			</div>
