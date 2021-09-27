@@ -1,0 +1,60 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+    
+}
+.form{
+    width:500px;
+    border-radius:20px;
+    height:135vh;
+   margin: auto;
+}
+.heading{
+    font-size:40px;font-weight: 1000;align-items: ;
+}
+input{
+    width:100%;
+    border:1px solid transparent;
+    box-shadow:none;
+    outline:none;
+}
+hr{
+    border:1px solid rgb(194, 187, 187);
+    transition:0.2s linear;
+}
+.row{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#user{font-size:20px;color:rgb(194, 187, 187)}
+#lock{font-size:20px;color:rgb(194, 187, 187)}
+
+.forgot-password{
+    font-size:15px;
+    font-weight:600;
+    color:rgb(148, 141, 141);
+    
+}
+.forget-password:hover{color: blueviolet;}
+a{
+    color:rgb(148, 141, 141);
+}
+a:hover{text-decoration: none;}
+
+.btn{
+    display: inline-block;
+    background-color: #000000;
+    color:#fff;
+    padding: 15px 100px 20px;
+    border-radius: 30px;
+    transition:background 0.5s;
+    margin-bottom: 20;
+}
+
+
+.ficon{padding:3% 3.5%;border-radius:50px;background-color:#3b5998;margin-right: 20px;}
+.ticon{padding:3% 3%;background-color: #1da1f2;border-radius:50px;margin-right: 20px;}
+.gicon{padding:3% 3.2%;background-color: #ea4335;border-radius:50px;}
+
+.ficon:hover,.ticon:hover,.gicon:hover{background-color:rgb(114, 109, 109);transition:0.5s linear;}

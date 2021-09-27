@@ -1,0 +1,416 @@
+/**COLORS*/
+.red{
+  color:#b60707;
+}
+.red:hover{
+  color:#393939;
+  transform: translateY(-5px);
+}
+.blue{
+  color:#0341ec;
+}
+.blue:hover{
+  color:#393939;
+  transform: translateY(-5px);
+}
+.active{
+  color:#4ea201;
+}
+.active:hover{
+  color:#393939;
+  transform: translateY(-5px);
+}
+.deactive{
+  color:#1f0c0c;
+}
+.deactive:hover{
+  color:#393939;
+  transform: translateY(-5px);
+}
+.flex{
+  display:flex;
+}
+
+.main-container .page-heading,.options {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #2e2d2d;
+  padding: 15px;
+  margin-bottom: 10px;  
+  width: 100%;  
+  
+}
+.main-container .page-heading .card{
+  flex-basis: 30%;
+  background: #fff;
+  color: #201c1c;
+  padding: 20px;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-container .page-heading h1{
+  flex-basis: 60%;
+  color: #393939;
+
+}
+.main-container .page-heading a{
+  text-decoration: none;
+  color: black;
+}
+.main-container .tb,.options{
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color:#393939;
+  width: 100%;
+  margin: 5px;
+}
+.main-container .tb table{
+  width: 100%;
+  text-align: center;
+  
+}
+.main-container .tb table th{
+  background-color: #393939;
+  color: white;
+}
+.main-container .tb table th,td{
+  padding: 5px;
+}
+.main-container .tb table tr:nth-child(even) {
+  background-color: #ffe868;
+}
+.main-container .tb table tr td a {
+  text-decoration: none;
+  color:#393939;
+  font-weight:bold;
+}
+.main-container .tb table tr td a:hover {
+  text-decoration: none;
+  color: #000;
+}
+.main-container .tb table tr td span {
+  padding: 0 7px 0px 7px;
+}
+.main-container .options button{
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    background: #bb9af8;
+    outline: none;
+    cursor: pointer;
+    color: #fff; 
+}
+.main-container .options button:hover{
+  transform: translateY(-5px);
+  background: #9578cc;
+}
+
+.main-container .tb form div {
+    padding:10px 10px;
+    width: 100%;
+    display: auto;
+  
+}
+input,textarea{
+  border: 2px solid #e7e7e7;
+  padding:10px 10px;
+  font-size: large;
+  background: transparent;
+  outline: none;
+  transition: .3s;
+}
+.main-container .tb form div input:focus,.main-container .tb form div input:valid,textarea:focus,textarea:valid,input:focus,input:valid {
+  border-color: #bb9af8;
+}
+.dropdown,.btnn,.btnn a{
+
+    padding: 5px 5px;
+    font-size: 1rem;
+    background: #393939;
+    outline: none;
+    cursor: pointer;
+    color: #fff;    
+}
+
+
+/****PRODUCT.PHP***/
+.product-list td {
+  height: 80px;
+}
+
+.product-list td img{
+  display: block;
+  height: 100%;
+  margin: auto;
+}
+/****PRODUCT DETAILS PAGE**/
+.tb .product-deets{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+/*****MANAGEPRODUCT.PHP**********/
+
+.tb .form input{ 
+  width: 100%;
+}
+
+.tb .pform,#image_box{
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+.tb .pform input{
+  margin: 0 15px 0 5px;
+}
+.tb .pform select{
+  margin: 0 15px 0 5px;
+}
+.tb .form textarea{
+  resize:none;
+  width: 100%;
+}
+
+/**HOME*/
+.main-container .home{
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(24%, 1fr));
+  grid-gap: 10px;
+  padding-bottom: 20px;
+}
+.home .card,.card-best{
+  background: #fff;
+  padding-top: 100%;  /* padding trick directly on the grid item */
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+ }
+
+.home .card .front-face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; 
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  padding: 15px;
+  transform: translateY(0);
+  transition: .4s;
+}
+.home .card-best .front-face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; 
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  transform: translateY(0);
+  transition: .4s;
+
+}
+.home .card:hover .front-face,.card-best:hover .front-face{
+  transform: translateY(100%); 
+}
+.home .card .front-face .imgbox{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.home .card-best .front-face .imgbox{
+  position: relative;
+  margin: auto; 
+}
+.home .card .front-face .imgbox img,.card-best .front-face .imgbox img{
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+.home .card .front-face h4{
+  font-size: large;
+  font-weight: 800;
+}
+.home .card .back-face,.card-best .back-face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; 
+  padding: 10px;
+  transition: .4s;
+  transform: translateY(calc(100% - 5px));
+}
+.home .card:nth-child(1) .back-face{
+  background: #62ddd3;
+}
+.home .card:nth-child(2) .back-face{
+  background: #ffe868;
+}
+.home .card:nth-child(3) .back-face{
+  background: #ac8aec;
+}
+.home .card:nth-child(4) .back-face{
+  background: #f67da5;
+}
+.home .card-best .back-face{
+  background: #464244;
+}
+.home .card:hover .back-face,.card-best:hover .back-face{
+  transform: translateY(0); 
+}
+.home .card .back-face .content{
+  width: 100%;
+  height:100%;
+  font-size: 2vw; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .card-best .back-face .content{
+  width: 100%;
+  height:100%;
+  font-size: large; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .card .back-face .content a{
+  text-decoration: none;
+  color: black;
+}
+.home .card-best .back-face .content a{
+  text-decoration: none;
+  color: #fff;
+}
+.home .card .back-face .content h4,h1{
+  text-align: center;
+}
+
+
+/*view product image*/
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  width: 70px;
+  margin: auto;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+.row{
+  display: block;
+  width: 80%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+  width: 80%;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color:#393939;
+  font-size: 35px;
+  cursor: pointer;
+}
+/*CONTACT US **/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*REVIEWS*/
+.review-deets{
+  flex:20%
+}
+.review-content{
+  flex:80%;
+  position:relative;
+}
+.review-content p,h3{
+  margin: 0px 20px 5px 20px;
+}
+.review-content div{
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
